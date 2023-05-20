@@ -1,4 +1,4 @@
-import "reflect-metadata"
+sudpimport "reflect-metadata"
 import { DataSource } from "typeorm"
 
 export const AppDataSource = new DataSource({
