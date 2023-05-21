@@ -68,13 +68,13 @@ const Login = () => {
           </form>
           <small>
             <Link href="/register">
-              <a className="mx-20 text-g-500 uppercase">회원가입 </a>
+              <a className=" mx-8 text-g-500 uppercase">회원가입 </a>
             </Link>
             <Link href="/register">
-              <a className="mx-10 text-g-500 uppercase">아이디 찾기</a>
+              <a className="mx-8 text-g-500 uppercase">아이디 찾기</a>
             </Link>
             <Link href="/register">
-              <a className="mx-10 text-g-500 uppercase">비밀번호 찾기</a>
+              <a className="mx-8 text-g-500 uppercase">비밀번호 찾기</a>
             </Link>
           </small>
         </div>
