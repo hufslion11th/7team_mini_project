@@ -4,6 +4,7 @@ import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useAuthDispatch, useAuthState } from "../context/auth";
+import Image from "next/image";
 
 const Login = () => {
   let router = useRouter();
@@ -37,10 +38,20 @@ const Login = () => {
     <div className="bg-white">
       <div className="flex flex-col items-center justify-center h-screen p-6">
         <div className="w-10/12 mx-auto md:w-96">
-          <h1 className="mb-2 text-lg font-medium">로그인</h1>
+          <div className="flex justify-center items-center mb-12">
+            <Image
+              src="/images/logo.jpg"
+              alt="compant logo"
+              width={150}
+              height={55}
+            />
+          </div>
+          {/* <h1 className="mb-2 text-xl font-medium text-center rounded-l-lg">
+            로그인
+          </h1> */}
           <form onSubmit={handleSubmit}>
             <InputGroup
-              placeholder="Username"
+              placeholder="Email"
               value={username}
               setValue={setUsername}
               error={errors.username}
@@ -51,14 +62,19 @@ const Login = () => {
               setValue={setPassword}
               error={errors.password}
             />
-            <button className="w-full py-2 mb-1 text-xs font-bold text-white uppercase bg-gray-400 border border-gray-400 rounded">
-              로그인
+            <button className="w-full py-2 mb-1 text-xs font-bold text-white uppercase bg-pink-600 border border-gray-400 rounded-full">
+              login
             </button>
           </form>
           <small>
-            아직 아이디가 없나요?
             <Link href="/register">
-              <a className="ml-1 text-blue-500 uppercase">회원가입</a>
+              <a className="mx-20 text-g-500 uppercase">회원가입 </a>
+            </Link>
+            <Link href="/register">
+              <a className="mx-10 text-g-500 uppercase">아이디 찾기</a>
+            </Link>
+            <Link href="/register">
+              <a className="mx-10 text-g-500 uppercase">비밀번호 찾기</a>
             </Link>
           </small>
         </div>
