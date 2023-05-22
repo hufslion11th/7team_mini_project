@@ -26,10 +26,11 @@ const NavBar: React.FC = () => {
         <Link href="/">
           <a>
             <Image
-              src="/reddit-name-logo.png"
+              src="/images/logo.jpg"
               alt="logo"
-              width={80}
-              height={45}
+              width={90}
+              height={40}
+              mt-5
             ></Image>
           </a>
         </Link>
