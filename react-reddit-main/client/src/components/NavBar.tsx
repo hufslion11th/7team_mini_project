@@ -27,10 +27,10 @@ const NavBar: React.FC = () => {
           <Link href="/">
             <a>
               <Image
-                src="/images/logo.jpg"
+                src="/images/모방구_로고_핫핑크.png"
                 alt="logo"
-                width={110}
-                height={40}
+                width={50}
+                height={50}
               ></Image>
             </a>
           </Link>
