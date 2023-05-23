@@ -73,7 +73,7 @@ const createPost = async (req: Request, res: Response) => {
 };
 
 const getPostComments = async (req: Request, res: Response) => {
-  console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
+  console.log('@@get comment success@@')
   const { identifier, slug } = req.params;
   try {
     const post = await Post.findOneByOrFail({ identifier, slug });
