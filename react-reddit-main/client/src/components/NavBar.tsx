@@ -21,33 +21,28 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <div className="fixed inset-x-0 top-0 z-10 flex items-center justify-between px-5 bg-white h-12">
-      <div className="flex">
-        <span className="text-2xl font-semibold text-gray-400 p-2">
-          <Link href="/">
-            <a>
-              <Image
-                src="/images/모방구_로고_핫핑크.png"
-                alt="logo"
-                width={0}
-                height={50}
-              ></Image>
-            </a>
-          </Link>
-        </span>
-        <div className="flex justify-start items-center">
-          <span className="ml-5 mr-5 text-sm font-medium">
-            <Link href="/">아파트</Link>
-          </span>
-          <span className="ml-5 mr-5 text-sm font-medium">
-            <Link href="/">빌라, 투룸+</Link>
-          </span>
-          <span className="ml-5 mr-5 text-sm font-medium">
-            <Link href="/">원룸</Link>
-          </span>
-          <span className="ml-5 mr-5 text-sm font-medium">
-            <Link href="/">오피스텔</Link>
-          </span>
+    <div className="fixed inset-x-0 top-0 z-10 flex items-center justify-between px-5 bg-white h-13">
+      <span className="text-2xl font-semibold text-gray-400">
+        <Link href="/">
+          <a>
+            <Image
+              src="/images/logo.jpg"
+              alt="logo"
+              width={100}
+              height={50}
+              mt-5
+            ></Image>
+          </a>
+        </Link>
+      </span>
+      <div className="max-w-full px-4">
+        <div className="relative flex items-center bg-gray-100 border rounded hover:border-gray-700 hover:bg-white">
+          <FaSearch className="ml-2 text-gray-400" />
+          <input
+            type="text"
+            placeholder="Search Reddit"
+            className="px-3 py-1 bg-transparent rounded h-7 focus:outline-none"
+          />
         </div>
       </div>
       <div className="flex">

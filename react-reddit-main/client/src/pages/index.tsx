@@ -73,18 +73,18 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-5xl px-4 pt-5 mx-auto">
       {/* 포스트 리스트 */}
-      <div className="w-full md:mr-3 md:w-8/12">
+      {/* <div className="w-full md:mr-3 md:w-8/12">
         {isInitialLoading && (
           <p className="text-lg text-center">로딩중입니다...</p>
         )}
         {posts?.map((post) => (
           <PostCard key={post.identifier} post={post} mutate={mutate} />
         ))}
-      </div>
+      </div> */}
 
       {/* 사이드바 */}
-      <div className="hidden w-4/12 ml-3 md:block">
-        <div className="bg-white border rounded-full">
+      <div className="hidden w-11/12 ml-1 md:block">
+        <div className="bg-white border rounded-lg">
           <div className="p-4 border-b">
             <p className="text-lg font-semibold text-center"> 커뮤니티</p>
           </div>
@@ -119,7 +119,7 @@ const Home: NextPage = () => {
           {authenticated && (
             <div className="w-full py-6 text-center">
               <Link href="/subs/create">
-                <a className="w-full p-2 text-center text-white bg-gray-400 rounded">
+                <a className="w-full p-2 text-center text-white bg-rose-200 rounded">
                   커뮤니티 만들기
                 </a>
               </Link>
