@@ -38,12 +38,13 @@ const Login = () => {
     <div className="bg-white">
       <div className="flex flex-col items-center justify-center h-screen p-6">
         <div className="w-10/12 mx-auto md:w-96">
-          <div className="flex justify-center items-center mb-12">
+          <div className="flex justify-center items-center mb-10 ">
             <Image
-              src="/images/logo.jpg"
+              className="rounded-3xl"
+              src="/images/mobangoo_logo.png"
               alt="compant logo"
               width={150}
-              height={55}
+              height={75}
             />
           </div>
           {/* <h1 className="mb-2 text-xl font-medium text-center rounded-l-lg">
@@ -62,19 +63,19 @@ const Login = () => {
               setValue={setPassword}
               error={errors.password}
             />
-            <button className="w-full py-2 mb-1 text-xs font-bold text-white uppercase bg-pink-600 border border-gray-400 rounded-full">
+            <button className="w-full py-2 mb-1 text-xs font-bold text-black uppercase bg-fuchsia-50 border border-gray-400 rounded-full">
               login
             </button>
           </form>
           <small>
             <Link href="/register">
-              <a className="mx-20 text-g-500 uppercase">회원가입 </a>
+              <a className=" mx-8 text-g-500 uppercase">회원가입 </a>
             </Link>
             <Link href="/register">
-              <a className="mx-10 text-g-500 uppercase">아이디 찾기</a>
+              <a className="mx-8 text-g-500 uppercase">아이디 찾기</a>
             </Link>
             <Link href="/register">
-              <a className="mx-10 text-g-500 uppercase">비밀번호 찾기</a>
+              <a className="mx-8 text-g-500 uppercase">비밀번호 찾기</a>
             </Link>
           </small>
         </div>

@@ -84,9 +84,9 @@ const Home: NextPage = () => {
 
       {/* 사이드바 */}
       <div className="hidden w-4/12 ml-3 md:block">
-        <div className="bg-white border rounded">
+        <div className="bg-white border rounded-full">
           <div className="p-4 border-b">
-            <p className="text-lg font-semibold text-center">상위 커뮤니티</p>
+            <p className="text-lg font-semibold text-center"> 커뮤니티</p>
           </div>
 
           {/* 커뮤니티 리스트 */}
