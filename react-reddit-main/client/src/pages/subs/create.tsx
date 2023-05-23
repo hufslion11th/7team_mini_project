@@ -36,7 +36,7 @@ const SubCreate = () => {
               커뮤니티 이름은 변경할 수 없습니다.
             </p>
             <InputGroup
-              placeholder="이름"
+              placeholder="방"
               value={name}
               setValue={setName}
               error={errors.name}
@@ -45,7 +45,7 @@ const SubCreate = () => {
           <div className="my-6">
             <p className="font-medium">Title</p>
             <p className="mb-2 text-xs text-gray-400">
-              주제를 나타냅니다. 언제든지 변경할 수 있습니다.
+              방을 나타냅니다. 언제든지 변경할 수 있습니다.
             </p>
             <InputGroup
               placeholder="제목"
