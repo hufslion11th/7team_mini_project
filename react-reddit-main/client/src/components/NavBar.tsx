@@ -21,7 +21,6 @@ const NavBar: React.FC = () => {
   };
 
   return (
-<<<<<<< HEAD
     <div className="fixed inset-x-0 top-0 z-10 flex items-center justify-between px-5 bg-white h-12">
       <div className="flex">
         <span className="text-2xl font-semibold text-gray-400 p-2">
@@ -30,7 +29,7 @@ const NavBar: React.FC = () => {
               <Image
                 src="/images/모방구_로고_핫핑크.png"
                 alt="logo"
-                width={50}
+                width={0}
                 height={50}
               ></Image>
             </a>
@@ -49,30 +48,6 @@ const NavBar: React.FC = () => {
           <span className="ml-5 mr-5 text-sm font-medium">
             <Link href="/">오피스텔</Link>
           </span>
-=======
-    <div className="fixed inset-x-0 top-0 z-10 flex items-center justify-between px-5 bg-white h-13">
-      <span className="text-2xl font-semibold text-gray-400">
-        <Link href="/">
-          <a>
-            <Image
-              src="/images/logo.jpg"
-              alt="logo"
-              width={90}
-              height={40}
-              mt-5
-            ></Image>
-          </a>
-        </Link>
-      </span>
-      <div className="max-w-full px-4">
-        <div className="relative flex items-center bg-gray-100 border rounded hover:border-gray-700 hover:bg-white">
-          <FaSearch className="ml-2 text-gray-400" />
-          <input
-            type="text"
-            placeholder="Search Reddit"
-            className="px-3 py-1 bg-transparent rounded h-7 focus:outline-none"
-          />
->>>>>>> main
         </div>
       </div>
       <div className="flex">
