@@ -28,8 +28,8 @@ const NavBar: React.FC = () => {
             <Image
               src="/images/logo.jpg"
               alt="logo"
-              width={90}
-              height={90}
+              width={100}
+              height={50}
               mt-5
             ></Image>
           </a>
