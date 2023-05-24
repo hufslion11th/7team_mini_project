@@ -68,7 +68,7 @@ const SubCreate = () => {
           </div>
           <div className="flex justify-center">
             <button className="px-4 py-1 text-sm font-semibold  text-white bg-rose-200 border rounded">
-              커뮤니티 만들기
+              방 등록하기
             </button>
           </div>
         </form>
