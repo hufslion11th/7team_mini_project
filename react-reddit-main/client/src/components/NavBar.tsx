@@ -35,15 +35,19 @@ const NavBar: React.FC = () => {
           </a>
         </Link>
       </span>
-      <div className="max-w-full px-4">
-        <div className="relative flex items-center bg-gray-100 border rounded hover:border-gray-700 hover:bg-white">
-          <FaSearch className="ml-2 text-gray-400" />
-          <input
-            type="text"
-            placeholder="Search Reddit"
-            className="px-3 py-1 bg-transparent rounded h-7 focus:outline-none"
-          />
-        </div>
+      <div className="flex justify-start items-center">
+        <span className="ml-5 mr-5 text-sm font-medium">
+          <Link href="/">아파트</Link>
+        </span>
+        <span className="ml-5 mr-5 text-sm font-medium">
+          <Link href="/">빌라, 투룸+</Link>
+        </span>
+        <span className="ml-5 mr-5 text-sm font-medium">
+          <Link href="/">원룸</Link>
+        </span>
+        <span className="ml-5 mr-5 text-sm font-medium">
+          <Link href="/">오피스텔</Link>
+        </span>
       </div>
       <div className="flex">
         <div className="max-w-full px-3">
