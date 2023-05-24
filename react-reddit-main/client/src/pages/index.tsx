@@ -71,7 +71,7 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div className="flex max-w-5xl px-4 pt-5 mx-auto">
+    <div className="flex-col justify-center align-center max-w-5xl px-4 pt-5 mx-auto">
       {/* 포스트 리스트 */}
       {/* <div className="w-full md:mr-3 md:w-8/12">
         {isInitialLoading && (
@@ -83,10 +83,12 @@ const Home: NextPage = () => {
       </div> */}
 
       {/* 사이드바 */}
-      <div className="hidden w-11/12 ml-1 md:block">
+      <div className="hidden w-12/12 ml-1 mt-14 md:block">
         <div className="bg-white border rounded-lg">
           <div className="p-4 border-b">
-            <p className="text-lg font-semibold text-center"> 커뮤니티</p>
+            <p className="text-lg font-semibold text-center">
+              모현의 방 둘러보기
+            </p>
           </div>
 
           {/* 커뮤니티 리스트 */}
@@ -94,7 +96,7 @@ const Home: NextPage = () => {
             {topSubs?.map((sub) => (
               <div
                 key={sub.name}
-                className="flex items-center px-4 py-2 text-xs border-b"
+                className="flex items-center px-4 py-2 text-xl border-b"
               >
                 <Link href={`/r/${sub.name}`}>
                   <a>
@@ -102,8 +104,8 @@ const Home: NextPage = () => {
                       src={sub.imageUrl}
                       className="rounded-full cursor-pointer"
                       alt="Sub"
-                      width={24}
-                      height={24}
+                      width={72}
+                      height={72}
                     />
                   </a>
                 </Link>
@@ -120,11 +122,50 @@ const Home: NextPage = () => {
             <div className="w-full py-6 text-center">
               <Link href="/subs/create">
                 <a className="w-full p-2 text-center text-white bg-rose-200 rounded">
-                  커뮤니티 만들기
+                  방 등록하기
                 </a>
               </Link>
             </div>
           )}
+        </div>
+      </div>
+      <div className="flex-col mt-24">
+        <div className="flex mt-20 justify-center items-center">
+          <span className="text-lg font-semibold text-center">
+            모현의 집 추천
+          </span>
+        </div>
+        <div className="flex justify-center items-center t-20">
+          <div className="flex-col mt-7 p-10">
+            <div className="rounded-3xl cursor-pointer bg-neutral-300 w-96 h-96" />
+            <div className="flex space-x-0">
+              <div className="flex justify-center items-center text-white bg-rose-200 rounded-lg w-14 h-7 mt-2">
+                <span className="text-sm text-center text-neutral-700">
+                  원룸
+                </span>
+              </div>
+              <div className="flex justify-center items-center h-7 mt-2 pl-3">
+                <span className="text-sm text-center text-neutral-700 font-bold">
+                  월세 500/40
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="flex-col mt-7 p-10">
+            <div className="rounded-3xl cursor-pointer bg-neutral-300 w-96 h-96" />
+            <div className="flex space-x-0">
+              <div className="flex justify-center items-center text-white bg-rose-200 rounded-lg w-14 h-7 mt-2">
+                <span className="text-sm text-center text-neutral-700">
+                  원룸
+                </span>
+              </div>
+              <div className="flex justify-center items-center h-7 mt-2 pl-3">
+                <span className="text-sm text-center text-neutral-700 font-bold">
+                  월세 300/30
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
