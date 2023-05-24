@@ -28,8 +28,8 @@ const NavBar: React.FC = () => {
             <Image
               src="/images/logo.jpg"
               alt="logo"
-              width={90}
-              height={40}
+              width={100}
+              height={50}
               mt-5
             ></Image>
           </a>
@@ -45,30 +45,42 @@ const NavBar: React.FC = () => {
           />
         </div>
       </div>
-
       <div className="flex">
-        {!loading &&
-          (authenticated ? (
-            <button
-              className="w-20 px-2 mr-2 text-sm text-center text-white bg-gray-400 rounded h-7"
-              onClick={handleLogout}
-            >
-              로그아웃
-            </button>
-          ) : (
-            <>
-              <Link href="/login">
-                <a className="w-20 px-2 pt-1 mr-2 text-sm text-center text-white bg-gray-400 rounded h-7">
-                  로그인
-                </a>
-              </Link>
-              <Link href="/register">
+        <div className="max-w-full px-3">
+          <div className="relative flex items-center bg-gray-100 border rounded-2xl hover:border-gray-700 hover:bg-white">
+            <FaSearch className="ml-2 text-gray-400" />
+            <input
+              type="text"
+              placeholder="Search"
+              className="px-4 py-1 bg-transparent rounded h-7 focus:outline-none"
+            />
+          </div>
+        </div>
+
+        <div className="flex">
+          {!loading &&
+            (authenticated ? (
+              <button
+                className="w-20 px-1 mr-2 text-sm text-center text-white bg-gray-400 rounded h-7"
+                onClick={handleLogout}
+              >
+                로그아웃
+              </button>
+            ) : (
+              <>
+                <Link href="/login">
+                  <a className="w-20 px-2 pt-1 mr-2 text-sm text-center text-black bg-white rounded h-7">
+                    Log In
+                  </a>
+                </Link>
+                {/* <Link href="/register">
                 <a className="w-20 px-2 pt-1 text-sm text-center text-white bg-gray-400 rounded h-7">
                   회원가입
                 </a>
-              </Link>
-            </>
-          ))}
+              </Link> */}
+              </>
+            ))}
+        </div>
       </div>
     </div>
   );
