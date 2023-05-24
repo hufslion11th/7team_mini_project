@@ -55,8 +55,8 @@ const Register = () => {
               setValue={setPassword}
               error={errors.password}
             />
-            <button className="w-full py-2 mb-1 text-xs font-bold text-black uppercase  bg-fuchsia-50 border border-gray-400 rounded-full">
-              회원가입하기
+            <button className="w-full py-2 mb-1 text-xs font-bold text-white uppercase bg-pink-600 border border-gray-400 rounded-full">
+              회원 가입
             </button>
           </form>
           <small>

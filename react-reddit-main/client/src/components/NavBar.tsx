@@ -21,33 +21,34 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <div className="fixed inset-x-0 top-0 z-10 flex items-center justify-between px-5 bg-white h-13">
-      <span className="text-2xl font-semibold text-gray-400">
-        <Link href="/">
-          <a>
-            <Image
-              src="/images/logo.jpg"
-              alt="logo"
-              width={100}
-              height={50}
-              mt-5
-            ></Image>
-          </a>
-        </Link>
-      </span>
-      <div className="flex justify-start items-center">
-        <span className="ml-5 mr-5 text-sm font-medium">
-          <Link href="/">아파트</Link>
+    <div className="fixed inset-x-0 top-0 z-10 flex items-center justify-between px-5 bg-white h-12">
+      <div className="flex">
+        <span className="text-2xl font-semibold text-gray-400 p-2">
+          <Link href="/">
+            <a>
+              <Image
+                src="/images/logo.jpg"
+                alt="logo"
+                width={110}
+                height={40}
+              ></Image>
+            </a>
+          </Link>
         </span>
-        <span className="ml-5 mr-5 text-sm font-medium">
-          <Link href="/">빌라, 투룸+</Link>
-        </span>
-        <span className="ml-5 mr-5 text-sm font-medium">
-          <Link href="/">원룸</Link>
-        </span>
-        <span className="ml-5 mr-5 text-sm font-medium">
-          <Link href="/">오피스텔</Link>
-        </span>
+        <div className="flex justify-start items-center">
+          <span className="ml-5 mr-5 text-sm font-medium">
+            <Link href="/">아파트</Link>
+          </span>
+          <span className="ml-5 mr-5 text-sm font-medium">
+            <Link href="/">빌라, 투룸+</Link>
+          </span>
+          <span className="ml-5 mr-5 text-sm font-medium">
+            <Link href="/">원룸</Link>
+          </span>
+          <span className="ml-5 mr-5 text-sm font-medium">
+            <Link href="/">오피스텔</Link>
+          </span>
+        </div>
       </div>
       <div className="flex">
         <div className="max-w-full px-3">
