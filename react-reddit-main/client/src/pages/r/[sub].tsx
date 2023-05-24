@@ -39,7 +39,7 @@ const SubPage = () => {
             console.log(error);
         }
     }
-
+    
     const openFileInput = (type: string) => {
 
         const fileInput = fileInputRef.current;

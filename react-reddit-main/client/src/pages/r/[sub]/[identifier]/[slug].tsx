@@ -202,10 +202,10 @@ const PostPage = () => {
                                                 </a>
                                             </Link>
                                             <span className="text-gray-600">
-                                                {`
-                                              ${comment.voteScore}
-                                              posts
-                                              ${dayjs(comment.createdAt).format("YYYY-MM-DD HH:mm")}
+                                            {`
+                                            ${comment.voteScore}
+                                            posts
+                                            ${dayjs(comment.createdAt).format("YYYY-MM-DD HH:mm")}
                                             `}
                                             </span>
                                         </p>

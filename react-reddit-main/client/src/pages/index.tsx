@@ -86,7 +86,7 @@ const Home: NextPage = () => {
       <div className="hidden w-4/12 ml-3 md:block">
         <div className="bg-white border rounded-full">
           <div className="p-4 border-b">
-            <p className="text-lg font-semibold text-center"> 커뮤니티</p>
+            <p className="text-lg font-semibold text-center">모현의 방</p>
           </div>
 
           {/* 커뮤니티 리스트 */}
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
             <div className="w-full py-6 text-center">
               <Link href="/subs/create">
                 <a className="w-full p-2 text-center text-white bg-gray-400 rounded">
-                  커뮤니티 만들기
+                  방 등록하기
                 </a>
               </Link>
             </div>
