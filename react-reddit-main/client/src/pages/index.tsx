@@ -73,18 +73,18 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-5xl px-4 pt-5 mx-auto">
       {/* 포스트 리스트 */}
-      <div className="w-full md:mr-3 md:w-8/12">
+      {/* <div className="w-full md:mr-3 md:w-8/12">
         {isInitialLoading && (
           <p className="text-lg text-center">로딩중입니다...</p>
         )}
         {posts?.map((post) => (
           <PostCard key={post.identifier} post={post} mutate={mutate} />
         ))}
-      </div>
+      </div> */}
 
       {/* 사이드바 */}
-      <div className="hidden w-4/12 ml-3 md:block">
-        <div className="bg-white border rounded-full">
+      <div className="hidden w-11/12 ml-1 md:block">
+        <div className="bg-white border rounded-lg">
           <div className="p-4 border-b">
             <p className="text-lg font-semibold text-center">모현의 방</p>
           </div>
