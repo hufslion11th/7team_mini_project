@@ -33,7 +33,7 @@ const SubCreate = () => {
           <div className="my-6">
             <p className="font-medium">Name</p>
             <p className="mb-2 text-xs text-gray-400">
-              커뮤니티 이름은 변경할 수 없습니다.
+              방 이름은 변경할 수 없습니다.
             </p>
             <InputGroup
               placeholder="방"
@@ -57,7 +57,7 @@ const SubCreate = () => {
           <div className="my-6">
             <p className="font-medium">Description</p>
             <p className="mb-2 text-xs text-gray-400">
-              해당 커뮤니티에 대한 설명입니다.
+              해당 방에 대한 설명입니다.
             </p>
             <InputGroup
               placeholder="설명"
@@ -66,8 +66,8 @@ const SubCreate = () => {
               error={errors.description}
             />
           </div>
-          <div className="flex justify-end">
-            <button className="px-4 py-1 text-sm font-semibold text-white bg-gray-400 border rounded">
+          <div className="flex justify-center">
+            <button className="px-4 py-1 text-sm font-semibold  text-white bg-rose-200 border rounded">
               커뮤니티 만들기
             </button>
           </div>
