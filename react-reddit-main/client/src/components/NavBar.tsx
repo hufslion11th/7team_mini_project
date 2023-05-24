@@ -26,9 +26,9 @@ const NavBar: React.FC = () => {
         <Link href="/">
           <a>
             <Image
-              src="/images/logo.jpg"
+              src="/images/mobangoo_logo_hyheadline.png"
               alt="logo"
-              width={100}
+              width={130}
               height={50}
               mt-5
             ></Image>

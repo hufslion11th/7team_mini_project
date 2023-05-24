@@ -52,7 +52,7 @@ const Login = () => {
           </h1> */}
           <form onSubmit={handleSubmit}>
             <InputGroup
-              placeholder="Email"
+              placeholder="ID"
               value={username}
               setValue={setUsername}
               error={errors.username}

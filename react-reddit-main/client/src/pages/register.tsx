@@ -44,7 +44,7 @@ const Register = () => {
               error={errors.email}
             />
             <InputGroup
-              placeholder="Username"
+              placeholder="ID"
               value={username}
               setValue={setUsername}
               error={errors.username}

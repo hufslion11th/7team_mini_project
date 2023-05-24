@@ -27,7 +27,7 @@ const SubCreate = () => {
   return (
     <div className="flex flex-col justify-center pt-16">
       <div className="w-10/12 p-4 mx-auto bg-white rounded md:w-96">
-        <h1 className="mb-2 text-lg font-medium">커뮤니티 만들기</h1>
+        <h1 className="mb-2 text-lg font-medium">방 등록하기</h1>
         <hr />
         <form onSubmit={handleSubmit}>
           <div className="my-6">
@@ -36,19 +36,19 @@ const SubCreate = () => {
               방 이름은 변경할 수 없습니다.
             </p>
             <InputGroup
-              placeholder="방"
+              placeholder="방 이름"
               value={name}
               setValue={setName}
               error={errors.name}
             />
           </div>
           <div className="my-6">
-            <p className="font-medium">Title</p>
+            <p className="font-medium">Price</p>
             <p className="mb-2 text-xs text-gray-400">
-              방을 나타냅니다. 언제든지 변경할 수 있습니다.
+              방의 가격을 입력해주세요.
             </p>
             <InputGroup
-              placeholder="제목"
+              placeholder="월세 / 보증금"
               value={title}
               setValue={setTitle}
               error={errors.title}

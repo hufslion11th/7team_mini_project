@@ -111,10 +111,10 @@ const Home: NextPage = () => {
                 </Link>
                 <Link href={`/r/${sub.name}`}>
                   <a className="ml-2 font-bold hover:cursor-pointer">
-                    /r/{sub.name}
+                    {sub.name}
                   </a>
                 </Link>
-                <p className="ml-auto font-md">{sub.postCount}</p>
+                {/* <p className="ml-auto font-md">{sub.postCount}</p> */}
               </div>
             ))}
           </div>
