@@ -35,7 +35,7 @@ export default class Sub extends BaseEntity {
     @Expose()
     get imageUrl(): string {
         return this.imageUrn ? `${process.env.APP_URL}/images/${this.imageUrn}` :
-            "/images/mobangooo_logo_round.png"
+            "/images/mobangoo_logo_full.png"
     }
 
     @Expose()

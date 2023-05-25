@@ -110,8 +110,8 @@ const SubPage = () => {
                                 <div className="absolute" style={{ top: -15 }}>
                                     {sub.imageUrl && (
                                         <Image
-                                            // src={sub.imageUrl}
-                                            src="/images/모방구_로고_HY헤드라인M.png"
+                                            src={sub.imageUrl}
+                                            // src="/images/모방구_로고_HY헤드라인M.png"
                                             alt="커뮤니티 이미지"
                                             width={70}
                                             height={70}
@@ -159,7 +159,9 @@ const SubPage = () => {
                             </Link>
                         </div> */}
                         <div className="flex-col max-w-5xl px-4 pt-5 mx-auto font-bold justify-items-center">
-                            <div className="p-4 px-8 text-fuchsia-200 font-bold text-center border-b-2">방 사진</div>
+                            <div className="p-4 px-8 text-fuchsia-200 font-bold text-center border-b-2">
+                                방 사진
+                            </div>
                             <div className="py-8">
                                 <div className="border-4 p-0 rounded-lg border-rose-200">
                                     {sub.imageUrl && (
@@ -169,7 +171,9 @@ const SubPage = () => {
                                             width={450}
                                             height={450}
                                             className=""
-                                            onClick={() => openFileInput("image")}
+                                            onClick={() =>
+                                                openFileInput("image")
+                                            }
                                         />
                                     )}
                                 </div>
