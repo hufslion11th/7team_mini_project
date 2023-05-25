@@ -132,6 +132,11 @@ const SubPage = () => {
                                         </h1>
                                     </div>
                                 </div>
+                                <div className="px-8">
+                                    <h3 className="mx-1 hover:underline text-gray-400 font-bold">
+                                        {user?.username}
+                                    </h3>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,7 +164,7 @@ const SubPage = () => {
                             </Link>
                         </div> */}
                         <div className="flex-col max-w-5xl px-4 pt-5 mx-auto font-bold justify-items-center">
-                            <div className="p-4 px-8 text-fuchsia-200 font-bold text-center border-b-2">
+                            <div className="p-4 px-8 text-black-200 font-bold text-center border-b-2">
                                 방 사진
                             </div>
                             <div className="py-8">
