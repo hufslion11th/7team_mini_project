@@ -168,7 +168,7 @@ const SubPage = () => {
                                 방 사진
                             </div>
                             <div className="py-8">
-                                <div className="border-4 p-0 rounded-lg border-rose-200">
+                                <div className="border-4 rounded-lg border-rose-200">
                                     {sub.imageUrl && (
                                         <Image
                                             src={sub.imageUrl}
