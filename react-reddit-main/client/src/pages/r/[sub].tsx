@@ -134,7 +134,7 @@ const SubPage = () => {
                                 </div>
                                 <div className="px-8">
                                     <h3 className="mx-1 hover:underline text-gray-400 font-bold">
-                                        {user?.username}
+                                        {sub.username}
                                     </h3>
                                 </div>
                             </div>

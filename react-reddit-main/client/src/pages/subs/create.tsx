@@ -3,11 +3,15 @@ import { GetServerSideProps } from "next";
 import { useRouter } from "next/router";
 import { FormEvent, useState } from "react";
 import InputGroup from "../../components/InputGroup";
+import { useAuthState } from "../../context/auth";
 
 const SubCreate = () => {
+  const { user } = useAuthState();
+
   const [name, setName] = useState("");
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const username = user?.username;
   const [errors, setErrors] = useState<any>({});
   let router = useRouter();
 
@@ -15,7 +19,7 @@ const SubCreate = () => {
     event.preventDefault();
 
     try {
-      const res = await axios.post("/subs", { name, title, description });
+      const res = await axios.post("/subs", { name, title, description, username });
 
       router.push(`/r/${res.data.name}`);
     } catch (error: any) {
